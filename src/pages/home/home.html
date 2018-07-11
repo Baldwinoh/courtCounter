@@ -1,14 +1,70 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <h1 text-center>Team A</h1>
+
+                <h2 text-center>{{scoreForTeamA}}</h2>
+
+                <p text-center> Score </p>
+
+                <ion-list no-lines no-padding>
+                    <ion-item text-center>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamA(+3)"> +3 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamA(-3)"> -3 </button></ion-col>
+                    </ion-item>
+
+
+                    <ion-item>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamA(+2)"> +2 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamA(-2)"> -2 </button></ion-col>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamA(+1)"> +1 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamA(-1)"> -1</button></ion-col>
+                    </ion-item>
+                </ion-list>
+            </ion-col>
+
+            <ion-col col-6>
+                <h1 text-center>Mahole B</h1>
+
+                <h2 text-center>{{scoreForTeamB}}</h2>
+
+                <p text-center> Score </p>
+
+                <ion-list no-lines no-padding>
+                    <ion-item>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamB(+3)"> +3 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamB(+3)"> -3 </button></ion-col>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamB(+2)"> +2 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamB(-2)"> -2 </button></ion-col>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-col col-2><button ion-button color="secondary" (click)="teamB(+1)"> +1 </button></ion-col>
+                        <ion-col col-4><button ion-button color="secondary" (click)="teamB(-1)"> -1 </button></ion-col>
+                    </ion-item>
+
+                </ion-list>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <button ion-button full round (click)="reset()">RESET </button>
+    <button ion-button full round (click)="endMatch()">RESET </button>
 </ion-content>
