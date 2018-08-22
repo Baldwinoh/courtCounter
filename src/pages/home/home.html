@@ -1,12 +1,12 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Ionic Blank
+            Court Counter App
         </ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="container">
 
 
     <ion-grid>
@@ -42,7 +42,7 @@
 
                 <h2 text-center>{{scoreForTeamB}}</h2>
 
-                <p text-center> Score </p>
+                <p text-center color="white"> Score </p>
 
                 <ion-list no-lines no-padding>
                     <ion-item>
@@ -65,6 +65,6 @@
         </ion-row>
     </ion-grid>
 
-    <button ion-button full round (click)="reset()">RESET </button>
-    <button ion-button full round (click)="endMatch()">RESET </button>
+    <button ion-button full round (click)="reset()"> RESET </button>
+    <button ion-button full round (click)="displayScore()"> Display Score </button>
 </ion-content>

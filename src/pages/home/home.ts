@@ -26,7 +26,7 @@ reset():void{
   this.scoreForTeamA=0;
   this.scoreForTeamB =0;
 }
-endMatch(): void{
+  displayScore(): void{
   this.navCtrl.push(WinnerPage)
 
 }
